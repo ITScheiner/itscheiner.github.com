@@ -20,7 +20,12 @@ body{
 	font-family: "HelveticaNeueLight", "HelveticaNeue-Light", "Helvetica Neue Light", "HelveticaNeue", "Helvetica Neue", 'TeXGyreHerosRegular', "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif !important;
 }
 
-h1,h2,h3,h4,h5{
+a, a:visited, a:hover, a:focus {
+	color: #444;
+	text-decoration: none;
+}
+
+h1, h2, h3, h4, h5{
 	font-family: inherit;
 }
 
@@ -30,6 +35,10 @@ h5{
 
 hr{
 	margin-bottom: 20px;
+}
+
+.row {
+	margin: 0px;
 }
 
 .center {
@@ -44,6 +53,35 @@ hr{
 	border-width: .1em; 
 	border-style: solid;
 	border-color: #ddd;
+}
+
+.right {
+	float: right !important;
+}
+
+.remove-right-margin {
+	margin-right: 0px !important;
+}
+
+.header {
+	margin-top: 40px !important;
+}
+
+#headerLinkContainer a{
+	position: relative;
+	float: inherit; 
+	top: 16px; 
+	color: #ccc;
+	margin: 0px 10px 0px 10px;
+	cursor: pointer;
+}
+
+#headerLinkContainer a:hover{
+	color: inherit;
+}
+
+.headerLink:hover {
+	color: inherit !important;
 }
 
 .linkContent{
@@ -69,17 +107,25 @@ hr{
 	border-color: #ddd;
 }
 
-.linkContainer:hover .linkContent{
-	opacity: 0.9;
-}
-
 .linkIcon{
 	position: relative;
 	width: 100%;
 }
 
-.linkContainer:hover .linkIcon{	
+.brettljausenHover:hover .linkIcon, .brettljausenHover:hover #brettljausenHint{
 	opacity: .1;
+}
+
+.brettljausenHover:hover .linkContent{
+	opacity: 0.9;
+}
+
+#brettljausenHint {
+	position:relative; 
+	top: -270px; 
+	left: 200px; 
+	width: 200px; 
+	padding: 5px;
 }
 
 .inset {
@@ -90,10 +136,6 @@ hr{
 	padding: 5px;
 }
 
-.one-and-twothird-rows {
-	min-height: 475px;
-}
-
 .one-third-row {
 	min-height: 75px;
 }
@@ -102,18 +144,17 @@ hr{
 	text-align: justify;
 }
 
-#twitterContent h5{
-	margin-bottom: 10px;
+#twitterContainer {
+	height: 455px;
 }
 
-#twitterContent a{
-	text-decoration: none;
+#twitterContent h5{
+	margin-bottom: 10px;
 }
 
 .twitterFeed{
 	opacity: 0;
 	cursor: pointer;
-	margin: 0px;
 	padding: 5px 10px 5px 10px;
 }
 
@@ -155,7 +196,6 @@ hr{
 	width: 100%;
 }
 
-
 @media only screen and (min-width: 768px) and (max-width: 959px) {
 
 	.mailContainer img{
@@ -188,6 +228,10 @@ hr{
 		height:278px;
 	}
 
+	#brettljausenHint, #headerLinkContainer {
+		display: none;
+	}
+
 }
 
 @media only screen and (min-width: 480px) and (max-width: 767px) {
@@ -206,6 +250,9 @@ hr{
 		height:398px;
 	}
 
+	#brettljausenHint, #headerLinkContainer {
+		display: none;
+	}
 
 }
 

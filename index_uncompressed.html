@@ -20,7 +20,6 @@
  	 ================================================== -->
 	<link rel="stylesheet" href="base.min.css">
 	<link rel="stylesheet" href="skeleton.min.css">
-	<link rel="stylesheet" href="layout.min.css">
 	<link rel="stylesheet" href="scheiner.min.css">
 
 	<!--[if lt IE 9]>
@@ -55,21 +54,24 @@
 
 	<!-- Delete everything in this .container and get started on your own site! -->
 
-	<div class="container" style="font-famliy: helvetica;">
-	
-		<div class="sixteen columns">
-			<h1 class="remove-bottom" style="margin-top: 40px; margin-left: 10px;">it-scheiner</h1>
+	<div class="container">
+		<div class="sixteen columns header">
+			<div class="five columns alpha">
+				<h1 class="half-bottom" style="margin-left:10px">it-scheiner</h1>
+			</div>
+			<div id="headerLinkContainer" class="five columns omega right">
+				<a class="remove-right-margin" href="./impressum.html">Impressum</a>
+				<a href="#">Home</a>
+			</div>
 			<hr />
 		</div>
-		<div class="eleven columns clearfix">
+		<div id="impressumContainer" class="eleven columns clearfix">
 			<div class="row">
 				<div class="five columns alpha">
 					<div class="blocksatz inset">
-						Unser Unternehmen besteht aus einem jungen energischen Team von Designern und
-						Entwicklern. Gegründet 2011, setzen wir seither erfolgreich sowohl eigene als auch zahlreiche Kundenprojekte um.
-						<br/>
-						<br/>
-						Wir sind spezialisiert auf Mobile- und Web-Development sowie die Integration neuer Technologien in bestehende Systeme.
+						<p>Unser Unternehmen besteht aus einem jungen energischen Team von Designern und
+						Entwicklern. Gegründet 2011, setzen wir seither erfolgreich sowohl eigene als auch zahlreiche Kundenprojekte um.</p>
+						<p class="remove-bottom">Wir sind spezialisiert auf Mobile- und Web-Development sowie die Integration neuer Technologien in bestehende Systeme.</p>
 					</div>
 				</div>
 				<div class="six columns omega">
@@ -77,7 +79,7 @@
 						<h5>Referenzen</h5>
 						<div class="referenceIconContainer">
 							<a href="http://fullpull-carpbaits.com" target="_blank">
-								<img src="./fullpull.min.png" alt="FullPull Carpbaits" class="referenceIcon" />
+								<img src="./images/fullpull.min.png" alt="FullPull Carpbaits" class="referenceIcon" />
 							</a>
 						</div>
 						<p class="center">Web Design sowie Entwurf und Umsetzung eines integrierten Online-Shops für Endverbraucher.</p>
@@ -86,34 +88,34 @@
 			</div>
 			<div class="row">
 				<div class="five columns alpha" style="height:100%;">
-					<div class="linkContainer inset">
-						<img src="./Brettljausen.min.png" alt="Brettljausen" class="linkIcon" />
+					<div class="linkContainer inset brettljausenHover">
+						<img src="./images/Brettljausen.min.png" alt="Brettljausen" class="linkIcon" />
 						<div class="linkContent">
 							<h4 class="center bold">Brettljausen</h4>
 							<br />
 							<p class="blocksatz">Mit der von uns entwickelten iOS-App ist der nächste offene Heurige nur einen Katzensprung von dir entfernt.</p>
 							<div class="center" style="border-style:none;">
 								<a href="http://www.brettljausen.at" target="_blank">
-									<img src="./globe-1.png" alt="Brettljausen Website" />
+									<img src="./images/globe.png" alt="Brettljausen Website" />
 								</a>
 								<a href="https://facebook.com/Brettljausen" target="_blank">
-									<img src="./facebook.png" alt="Brettljausen Facebook-Page" />
+									<img src="./images/facebook.png" alt="Brettljausen Facebook-Page" />
 								</a>
 								<a href="https://twitter.com/Brettljausen" target="_blank">
-									<img src="./twitter-bird.png" alt="Brettljausen Twitter-Account" />
+									<img src="./images/twitter-bird.png" alt="Brettljausen Twitter-Account" />
 								</a>
 							</div>
 						</div>
+						<div id="brettljausenHint">
+							<img src="./images/arrow.png" alt="Berühr das Brett!" />
+						</div>		
 					</div>
 				</div>	
 				<div class="six columns omega">
-					<div class="inset">
-									
-					</div>
 				</div>
 			</div>
 		</div>
-		<div class="five columns one-and-twothird-rows">
+		<div id="twitterContainer" class="five columns">
 			<div class="inset" id="twitterContent">
 				<h5>Twitter</h5>
 			</div>
@@ -121,7 +123,7 @@
 		<div class="five columns one-third-row">
 			<a href="mailto:contact@it-scheiner.at">
 				<div class="mailContainer inset-five bordered">
-					<img src="./envelope.png" alt="Sende mir ein Mail!" />
+					<img src="./images/envelope.png" alt="Sende uns ein Mail!" />
 				</div>
 			</a>
 		</div>

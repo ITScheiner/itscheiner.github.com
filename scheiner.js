@@ -38,7 +38,7 @@ var loadTweets = function(){
     		success: function (data) {
 			tweet = "";
 			for(i = 0; i < data.length; i++){
-        			tweet += '<div class="twitterFeed"><a href="https://twitter.com/scheiner/status/' + data[i].id_str + '" target="_blank"><p>' + data[i].text + '</p><span class="twitterTime">' + data[i].created_at + '</span></a></div>';
+        			tweet += '<div class="twitterFeed"><a href="https://twitter.com/scheiner/status/' + data[i].id_str + '" target="_blank"><p class="no-margin">' + data[i].text + '</p><span class="twitterTime">' + data[i].created_at + '</span></a></div>';
 			}
 			$(tweet).appendTo('#twitterContent');
 			$('.twitterFeed').animate({
