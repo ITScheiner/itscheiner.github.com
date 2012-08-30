@@ -95,7 +95,7 @@ hr{
 
 #brettljausenLinkContent img{
 	width: 30px;
-    	padding: 15px;
+    padding: 15px;
 }
 
 #brettljausenLinkContainer {
@@ -191,10 +191,11 @@ hr{
 }
 
 .referenceIconContainer{
-	padding: 40px 20px 20px 20px;
+	margin: 30px 20px 20px 20px;
+	height: 75px;
 }
 
-.referenceIcon {
+.referenceIconContainer img {
 	width: 100%;
 }
 
@@ -221,8 +222,8 @@ hr{
 	}
 
 	#brettljausenHint {
-	top: -328px; 
-	left: 155px;
+		top: -328px; 
+		left: 155px;
 	}
 
 }

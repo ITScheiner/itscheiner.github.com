@@ -28,8 +28,27 @@
 	var s = document.getElementsByTagName('script')[0]; 
 	s.parentNode.insertBefore(jq, s);
 	s.parentNode.insertBefore(ga, s);
-})();
 
+    //setInterval('changeReferences()', 5000);
+})();
+/*
+var changeReferences = function(){
+
+    if ($('#fullpull').length > 0 ) {
+        $('#fullpull').fadeOut('slow', function() {
+            $('#fullpull').replaceWith('<div id="atn" style="display: none;"><div class="referenceIconContainer"><a href="http://austrian-training-network.at" target="_blank"><img src="./images/atn.png" alt="Austrian Training Network" /></a></div><p class="center">Corporate and Media Design</p></div>');
+            $('#atn').fadeIn('slow');
+        });
+    }
+    else{
+        $('#atn').fadeOut('slow', function() {
+            $('#atn').replaceWith('<div id="fullpull" style="display: none;"><div class="referenceIconContainer"><a href="http://fullpull-carpbaits.com" target="_blank"><img src="./images/fullpull.min.png" alt="FullPull Carpbaits" /></a></div><p class="center">Web Design sowie Entwurf und Umsetzung eines integrierten Online-Shops für Endverbraucher</p></div>');
+            $('#fullpull').fadeIn('slow');
+        });
+    }
+
+};
+*/
 var loadTweets = function(){
 
 	$.ajax({
