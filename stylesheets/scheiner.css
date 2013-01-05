@@ -66,13 +66,17 @@ hr{
 }
 
 .header {
-	margin-top: 40px !important;
+	margin-top: 30px !important;
+}
+
+.header img {
+	margin-left: 10px;
 }
 
 #headerLinkContainer a{
 	position: relative;
 	float: inherit; 
-	top: 16px; 
+	top: 26px; 
 	color: #ccc;
 	margin: 0px 10px 0px 10px;
 	cursor: pointer;
