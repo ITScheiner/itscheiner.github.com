@@ -1,0 +1,87 @@
+/* # -- Different Width
+================================================== */
+
+@media all and (max-width: 1024px),
+	all and (max-device-width: 1024px) {
+	
+	#labels > div { margin: 0 38px; }	
+}
+
+@media all and (max-width: 768px),
+	all and (max-device-width: 768px) {
+	
+	.wrapper { 
+		max-width: 768px; 
+		width: 100%;
+	}
+	
+	.scrn .mid-content { left: 0; }
+	
+	#labels > div,
+	
+	#about-us .features > ul > li .pic { padding: 40px 20px; }
+	
+	#main-btn { display: none; }
+}
+
+@media all and (device-width: 768px) and (device-height: 1024px) and (orientation:landscape) {
+}
+
+@media all and (max-width: 767px),
+	all and (max-device-width: 767px) {
+	
+	.full-height { height: auto; }
+	.scrn .mid-content { margin-top: 50px; }
+	
+	#labels > div, 
+	
+	#labels .das { width: 90px; }
+	#labels > div { width: 60px; }	
+}
+
+@media all and (max-width: 705px),
+	all and (max-device-width: 705px) {
+	
+	#about-us .features > ul > li {
+		display: block;
+	}
+	
+	body > footer .left,
+	body > footer .right {
+		float: none !important;
+	}
+	
+	body > footer .text {
+		margin-bottom: 10px;
+	}
+}
+
+@media all and (max-width: 415px),
+	all and (max-device-width: 415px) {
+	
+	#labels > div, 
+	
+	#labels .das { width: 75px; }
+	#labels > div { width: 50px; }
+}
+
+/* # -- Different Height of .mid-content
+================================================== */
+
+@media all and (min-height: 900px) {
+	.scrn .mid-content {
+		top: 15%;
+	}
+}
+
+@media all and (max-height: 768px) {
+	.scrn .mid-content {
+		top: 10%;
+	}
+}
+
+@media all and (max-height: 718px) {
+}
+
+@media all and (max-height: 640px) {
+}
